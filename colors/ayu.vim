@@ -93,10 +93,13 @@ exe "hi! LineNr"        .s:fg_guide       .s:bg_none        .s:fmt_none
 
 exe "hi! Directory"     .s:fg_fg_idle     .s:bg_none        .s:fmt_none
 exe "hi! DiffAdd"       .s:fg_string      .s:bg_panel       .s:fmt_none
+exe "hi! diffAdded"     .s:fg_string      .s:bg_bg          .s:fmt_none
 exe "hi! DiffChange"    .s:fg_tag         .s:bg_panel       .s:fmt_none
+exe "hi! DiffDelete"    .s:fg_error       .s:bg_panel       .s:fmt_none
+exe "hi! diffRemoved"   .s:fg_error       .s:bg_bg          .s:fmt_none
 exe "hi! DiffText"      .s:fg_fg          .s:bg_panel       .s:fmt_none
-exe "hi! ErrorMsg"      .s:fg_fg          .s:bg_error       .s:fmt_stnd
-exe "hi! VertSplit"     .s:fg_bg          .s:bg_none        .s:fmt_none
+exe "hi! ErrorMsg"      .s:fg_error       .s:bg_panel       .s:fmt_none
+exe "hi! VertSplit"     .s:fg_panel       .s:bg_none        .s:fmt_none
 exe "hi! Folded"        .s:fg_fg_idle     .s:bg_panel       .s:fmt_none
 exe "hi! FoldColumn"    .s:fg_none        .s:bg_panel       .s:fmt_none
 exe "hi! SignColumn"    .s:fg_none        .s:bg_panel       .s:fmt_none
@@ -111,7 +114,8 @@ exe "hi! PmenuSel"      .s:fg_fg          .s:bg_selection   .s:fmt_revr
 "   PmenuSbar"
 "   PmenuThumb"
 exe "hi! Question"      .s:fg_string      .s:bg_none        .s:fmt_none
-exe "hi! Search"        .s:fg_bg          .s:bg_constant    .s:fmt_none
+exe "hi! Search"        .s:fg_none        .s:bg_line        .s:fmt_undr
+exe "hi! CurSearch"     .s:fg_none        .s:bg_none        .s:fmt_revr
 exe "hi! SpecialKey"    .s:fg_selection   .s:bg_none        .s:fmt_none
 exe "hi! SpellCap"      .s:fg_tag         .s:bg_none        .s:fmt_undr
 exe "hi! SpellLocal"    .s:fg_keyword     .s:bg_none        .s:fmt_undr
@@ -178,7 +182,7 @@ exe "hi! Underlined"      .s:fg_tag       .s:bg_none        .s:fmt_undr
 
 exe "hi! Ignore"          .s:fg_none      .s:bg_none        .s:fmt_none
 
-exe "hi! Error"           .s:fg_fg        .s:bg_error       .s:fmt_none
+exe "hi! Error"           .s:fg_error     .s:bg_none        .s:fmt_none
 
 exe "hi! Todo"            .s:fg_markup    .s:bg_none        .s:fmt_none
 
@@ -248,28 +252,6 @@ exe "hi! GitGutterChangeDelete" .s:fg_function   .s:bg_none        .s:fmt_none
 
 "}}}
 
-" Diff Syntax Highlighting:"{{{
-" ----------------------------------------------------------------------------
-" Diff
-"   diffOldFile
-"   diffNewFile
-"   diffFile
-"   diffOnly
-"   diffIdentical
-"   diffDiffer
-"   diffBDiffer
-"   diffIsA
-"   diffNoEOL
-"   diffCommon
-hi! link diffRemoved Constant
-"   diffChanged
-hi! link diffAdded String
-"   diffLine
-"   diffSubname
-"   diffComment
-
-"}}}
-"
 " This is needed for some reason: {{{
 
 let &background = s:style
