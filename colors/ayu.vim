@@ -92,17 +92,17 @@ exe "hi! CursorLineNr"  .s:fg_accent      .s:bg_line        .s:fmt_none
 exe "hi! LineNr"        .s:fg_guide       .s:bg_none        .s:fmt_none
 
 exe "hi! Directory"     .s:fg_fg_idle     .s:bg_none        .s:fmt_none
-exe "hi! DiffAdd"       .s:fg_string      .s:bg_panel       .s:fmt_none
-exe "hi! diffAdded"     .s:fg_string      .s:bg_bg          .s:fmt_none
-exe "hi! DiffChange"    .s:fg_tag         .s:bg_panel       .s:fmt_none
-exe "hi! DiffDelete"    .s:fg_error       .s:bg_panel       .s:fmt_none
-exe "hi! diffRemoved"   .s:fg_error       .s:bg_bg          .s:fmt_none
-exe "hi! DiffText"      .s:fg_fg          .s:bg_panel       .s:fmt_none
+exe "hi! DiffAdd"       .s:fg_none        .s:bg_panel       .s:fmt_none
+exe "hi! diffAdded"     .s:fg_string      .s:bg_panel       .s:fmt_none
+exe "hi! DiffChange"    .s:fg_none        .s:bg_panel       .s:fmt_none
+exe "hi! DiffDelete"    .s:fg_none        .s:bg_panel       .s:fmt_none
+exe "hi! diffRemoved"   .s:fg_error       .s:bg_panel       .s:fmt_none
+exe "hi! DiffText"      .s:fg_none        .s:bg_guide       .s:fmt_none
 exe "hi! ErrorMsg"      .s:fg_error       .s:bg_panel       .s:fmt_none
 exe "hi! VertSplit"     .s:fg_panel       .s:bg_none        .s:fmt_none
 exe "hi! Folded"        .s:fg_fg_idle     .s:bg_panel       .s:fmt_none
 exe "hi! FoldColumn"    .s:fg_none        .s:bg_panel       .s:fmt_none
-exe "hi! SignColumn"    .s:fg_none        .s:bg_panel       .s:fmt_none
+exe "hi! SignColumn"    .s:fg_none        .s:bg_bg          .s:fmt_none
 "   Incsearch"
 
 exe "hi! MatchParen"    .s:fg_fg          .s:bg_bg          .s:fmt_undr
