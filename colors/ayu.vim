@@ -252,6 +252,24 @@ exe "hi! GitGutterChangeDelete" .s:fg_function   .s:bg_none        .s:fmt_none
 
 "}}}
 
+" Coc nvim:"{{{
+" --------
+exe "hi CocCodeLens"             .s:fg_comment
+exe "hi CocErrorSign"            .s:fg_error
+exe "hi CocWarningSign"          .s:fg_tag
+exe "hi CocInfoSign"             .s:fg_accent
+exe "hi CocHintSign"             .s:fg_markup
+" exe "hi CocErrorHighlight"
+" exe "hi CocWarningHighlight"
+" exe "hi CocInfoHighlight"
+exe "hi CocGitAddedSign"         .s:fg_string
+exe "hi CocGitChangedSign"       .s:fg_tag
+exe "hi CocGitChangeRemovedSign" .s:fg_error
+exe "hi CocGitRemovedSign"       .s:fg_error
+exe "hi CocGitTopRemovedSign"    .s:fg_error
+
+" }}}
+
 " This is needed for some reason: {{{
 
 let &background = s:style
