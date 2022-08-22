@@ -252,6 +252,16 @@ exe "hi! GitGutterChangeDelete" .s:fg_function   .s:bg_none        .s:fmt_none
 
 "}}}
 
+" Signify
+" ---------
+exe "hi! SignifySignAdd"             .s:fg_string     .s:bg_none        .s:fmt_none
+exe "hi! SignifySignChange"          .s:fg_tag        .s:bg_none        .s:fmt_none
+exe "hi! SignifySignDelete"          .s:fg_markup     .s:bg_none        .s:fmt_none
+exe "hi! SignifySignChangeDelete"    .s:fg_function   .s:bg_none        .s:fmt_none
+exe "hi! SignifySignDeleteFirstLine" .s:fg_function   .s:bg_none        .s:fmt_none
+
+"}}}
+
 " Coc nvim:"{{{
 " --------
 exe "hi CocCodeLens"             .s:fg_comment
