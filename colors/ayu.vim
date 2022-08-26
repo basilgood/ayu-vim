@@ -228,6 +228,9 @@ else
   let g:terminal_ansi_colors += [s:palette.regexp[s:style],  s:palette.comment[s:style]]
 endif
 
+" html
+" ---------
+exe "hi! htmlEndTag"            .s:fg_function  .s:bg_none        .s:fmt_none
 
 " NerdTree
 " ---------
