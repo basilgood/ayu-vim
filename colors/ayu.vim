@@ -23,9 +23,10 @@ let s:palette.operator  = {'dark': "#E7C547",  'light': "#E7C547",  'mirage': "#
 let s:palette.tag       = {'dark': "#59C2FF",  'light': "#36A3D9",  'mirage': "#5CCFE6"}
 let s:palette.regexp    = {'dark': "#95E6CB",  'light': "#4CBF99",  'mirage': "#95E6CB"}
 let s:palette.string    = {'dark': "#C2D94C",  'light': "#86B300",  'mirage': "#BBE67E"}
-let s:palette.function  = {'dark': "#FFB454",  'light': "#F29718",  'mirage': "#FFD57F"}
+let s:palette.function  = {'dark': "#4CD9AA",  'light': "#F29718",  'mirage': "#FFD57F"}
 let s:palette.special   = {'dark': "#E6B673",  'light': "#E6B673",  'mirage': "#FFC44C"}
 let s:palette.keyword   = {'dark': "#FF8F40",  'light': "#FF7733",  'mirage': "#FFAE57"}
+let s:palette.statement = {'dark': "#D94C7B",  'light': "#FF7733",  'mirage': "#FFAE57"}
 
 let s:palette.error     = {'dark': "#FF3333",  'light': "#FF3333",  'mirage': "#FF3333"}
 let s:palette.accent    = {'dark': "#F29718",  'light': "#FF6A00",  'mirage': "#FFCC66"}
@@ -152,7 +153,7 @@ exe "hi! String"          .s:fg_string    .s:bg_none        .s:fmt_none
 exe "hi! Identifier"      .s:fg_tag       .s:bg_none        .s:fmt_none
 exe "hi! Function"        .s:fg_function  .s:bg_none        .s:fmt_none
 
-exe "hi! Statement"       .s:fg_keyword   .s:bg_none        .s:fmt_none
+exe "hi! Statement"       .s:fg_statement .s:bg_none        .s:fmt_none
 "   Conditional"
 "   Repeat"
 "   Label"
